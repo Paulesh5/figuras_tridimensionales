@@ -30,4 +30,5 @@ public class figuras_3d {
     private void volumenCubo(){
         volumen_cubo = getLado_cubo() * getLado_cubo() * getLado_cubo();
     }
+
 }

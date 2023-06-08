@@ -46,4 +46,5 @@ public class menuPrincipal {
         System.out.println("4. FIGURA 4");
         System.out.println("5. SALIR");
     }
+
 }
