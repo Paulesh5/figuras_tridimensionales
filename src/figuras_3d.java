@@ -31,4 +31,28 @@ public class figuras_3d {
         volumen_cubo = getLado_cubo() * getLado_cubo() * getLado_cubo();
     }
 
+    //Cilindro
+    private double altura_cilindro,radio_cilindro,area_cilindro,volumen_cilindro;
+    public figuras_3d(double altura_cilindro, double radio_cilindro) {
+        this.altura_cilindro = altura_cilindro;
+        this.radio_cilindro = radio_cilindro;
+    }
+    public double getAltura_cilindro() { return altura_cilindro; }
+    public double getRadio_cilindro() { return radio_cilindro; }
+    public void setAltura_cilindro(double altura_cilindro) { this.altura_cilindro = altura_cilindro;  }
+    public void setRadio_cilindro(double radio_cilindro) { this.radio_cilindro = radio_cilindro;  }
+    public double getArea_cilindro(){
+        areacilindro();
+        return area_cilindro;
+    }
+    public double getVolumen_cilindro() {
+        volumencilindro();
+        return volumen_cilindro;
+    }
+    private void areacilindro(){
+        area_cilindro = 2*3.14*getRadio_cilindro()*(getRadio_cilindro()+getAltura_cilindro());
+    }
+    private void volumencilindro(){
+        volumen_cilindro = 3.14*(getRadio_cilindro()*getRadio_cilindro())*getAltura_cilindro();
+    }
 }
